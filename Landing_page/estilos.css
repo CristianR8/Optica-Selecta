@@ -1,0 +1,268 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px; 
+}
+
+/* Estilos del navbar */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+    padding: 10px 20px;
+    position: fixed; 
+    width: 97%; 
+    top: 0; 
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.imgMenu {
+    flex: 1;
+}
+
+.imgMenu a {
+    display: flex;
+    align-items: center;
+}
+
+.imgMenu img {
+    height: 50px;
+}
+
+.menuHijo {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.menuHijo a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menuHijo a:hover {
+    color: #ddd;
+}
+
+.botonMenu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botonMenu .boton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botonMenu .boton:hover {
+    background-color: white;
+    color: #333;
+}
+
+.contenedorImg {
+    position: relative;
+    text-align: right;
+    color: white;
+    overflow: hidden; 
+}
+
+.banner {
+    width: 100%;
+    max-height: 100vh; 
+    object-fit: cover; 
+}
+
+.titulo {
+    position: absolute;
+    bottom: 20%;
+    right: 5%; 
+    text-align: right;
+}
+
+.titulo h2 {
+    font-size: 2.5rem; 
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%; 
+    right: 5%;
+    text-align: right;
+    max-width: 600px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+
+/* Estilos de la sección de destacados */
+.section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    font-size: 0.9rem; 
+}
+
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px; 
+    padding: 20px; 
+    text-align: center;
+    width: 250px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px #363af5; 
+}
+
+/* Estilos del footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer .column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .column img {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.footer .footer-image {
+    width: 100px;
+    height: auto;
+}
+
+.footer .contact-column {
+    text-align: left;
+}
+
+.footer .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.footer .contact-item .icons {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuHijo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuHijo a {
+        margin: 10px 0;
+    }
+
+    .botonMenu {
+        align-self: flex-end;
+    }
+
+    .contenedorImg .titulo,
+    .contenedorImg .hero-text {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer .contact-column {
+        text-align: center;
+    }
+}
+
